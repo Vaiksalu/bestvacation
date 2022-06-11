@@ -1,0 +1,199 @@
+:root { /*CSS-variables, muutujad üle lehe*/
+    --dark-color: #605644;
+    --medium-color: #26a7e8;
+    --medium-transparent:#36aae458;
+    --light-color: #ede5dd;
+    --light-transparent: #ede5dd94;
+}
+
+
+@font-face { /*muutujad üle lehe*/
+    font-family: myRaleway;
+    src: url('../fonts/Raleway-Light.ttf');
+}
+
+*{ /*, tühistasin vaikimised sätted, joonistab raamikeses sisse*/
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--light-color);
+    text-align: center;
+    font-family: myRaleway;
+}
+
+.intro-image {
+    background-attachment: fixed; /*paralaxi effect*/
+    background-image: url('../images/pilt4.jpg');
+    height: 600px;
+    background-position: bottom;
+    background-size: cover;
+    position: relative;
+
+}
+
+.intro-image__link {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+}
+
+.intro-image__link a {
+    background-color: var(--light-transparent);
+    border: 2px solid var(--dark-color);
+    text-decoration: none;
+    display: inline-block;
+    color: var(--dark-color);
+    font-size: 3rem;
+    padding: 2rem;
+    text-transform: uppercase;/*tekst suured tähed*/
+    transition: all 0.5s ease-out; /*sujuvus*/
+}
+.intro-image__link a:hover, .quality-image_link a:hover, .booking-image_link a:hover {
+    transform: scale(1.2); /*saab tasukada koode, hover reegli järgi*/
+}
+
+.intro-text {
+    display: flex; /*teeb ala veerung tabelis*/
+    background-color: var(--dark-color);
+    color: var(--light-color);
+    height: 250px;
+    padding: 0 15rem; /*tekst keskele*/ 
+    /*justify-content: center;*/
+    align-items: center; /*paigaldas elemendid/kasti keskele*/
+}
+
+.intro-text h3{
+    font-size: 2rem;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+}
+
+.quality-image {
+    background-image: url("../images/pilt\ 1.jpg");
+    background-attachment: fixed; /*paralaxi effect*/
+    height: 600px;
+    background-size: cover;
+    background-position: bottom;
+    display: flex; /*viskas elemendid kasti keskele*/
+    align-items: center;  /*viskas elemendid kasti keskele*/
+    justify-content: center;  /*viskas elemendid kasti keskele*/
+}
+
+.quality-image__link {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+}
+.quality-image_link a {
+    background-color: var(--medium-transparent);
+    border: 2px solid var(--dark-color);
+    text-decoration: none;
+    display: inline-block;
+    color: var(--dark-color);
+    font-size: 3rem;
+    padding: 2rem;
+    text-transform: uppercase;/*tekst suured tähed*/
+    transition: all 0.5s ease-out; /*sujuvus*/
+}
+
+.quality-text {
+    display: flex; /*teeb ala veerung tabelis*/
+    background-color: var(--dark-color);
+    color: var(--light-color);
+    height: 250px;
+    padding: 0 15rem; /*tekst keskele*/ 
+    /*justify-content: center;*/
+    align-items: center; /*paigaldas elemendid/kasti keskele*/
+}
+
+.quality-text h3{
+    font-size: 2rem;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+}
+
+
+.booking-image {
+    background-image: url("../images/pilt5.jpg");
+    background-attachment: fixed; /*paralaxi effect*/
+    height: 600px;
+    background-size: cover;
+    background-position: bottom;
+    display: flex; /*viskas elemendid kasti keskele*/
+    align-items: center;  /*viskas elemendid kasti keskele*/
+    justify-content: center;  /*viskas elemendid kasti keskele*/
+}
+
+.booking-image_link a {
+    background-color: var(--light-transparent);
+    border: 2px solid var(--dark-color);
+    text-decoration: none;
+    display: inline-block;
+    color: var(--dark-color);
+    font-size: 3rem;
+    padding: 2rem;
+    text-transform: uppercase;/*tekst suured tähed*/
+    transition: all 0.5s ease-out; /*sujuvus*/
+}
+
+.booking-text {
+    display: flex; /*teeb ala veerung tabelis*/
+    background-color: var(--dark-color);
+    color: var(--light-color);
+    height: 250px;
+    padding: 0 15rem; /*tekst keskele*/ 
+    /*justify-content: center;*/
+    align-items: center; /*paigaldas elemendid/kasti keskele*/
+}
+
+.booking-text h3{
+    font-size: 2rem;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+}
+
+.booking-image__link {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+}
+
+.footer {
+    height: 150px;
+    background-color: var(--light-color);
+    color: var(--dark-color);
+    font-size: 1.5rem;
+}
+
+.contact {
+    padding-top: 2rem; /*andsin ruumi*/
+
+}
+
+.contact ul li {
+     /*ühele joonele*/
+ display: inline-block;
+ margin: 1rem; /*lõin ruumi*/
+}
+
+.contact ul li a {
+text-decoration: none;
+color: var(--dark-color);
+transition: all 0.5s ease-in-out; /*sujuvus*/
+}
+
+/*saab igale animatsiooni luua, id tuleb luua*/
+
+.contact ul li a:hover {
+    color: var(--light-color);
+}
+
